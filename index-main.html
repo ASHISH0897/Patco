@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PAT.CO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            color: white;
+        }
+
+        .menu-container {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-left: 20px;
+            font-size: 40px;
+        }
+
+        .menu {
+            background: #223f77;
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 30px;
+            text-transform: uppercase;
+        }
+
+        .menu a {
+            padding: 4px 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .aboutus-container {
+            background: #3853a4;
+            width: 100%;
+        }
+
+        .about {
+            color: #455eaa;
+            font-weight: bolder;
+            font-size: 100px;
+            text-shadow: 0px 2px 0 #223f77;
+            margin-left: 150px;
+        }
+
+        .aboutus-intro {
+            display: flex;
+            justify-content: center;
+        }
+
+        .aboutus-intro .intro {
+            padding: 10px;
+            width: 250px;
+        }
+
+        .aboutus-intro .intro {
+            padding: 15px;
+            width: 375px;
+        }
+
+        .line-with-circle {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            width: 125px;
+            height: 2px;
+        }
+
+        .red {
+            background-color: #c70000;
+        }
+
+        .yellow {
+            background-color: #fcba17;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+        }
+
+        .circle-end {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        .circle-start {
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .intro-head {
+            font-size: 20px;
+        }
+
+        .yellow-text {
+            color: #fcba17;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .intro1 {
+            text-align: right;
+        }
+
+        .patco_productions {
+            padding: 30px;
+            height: 450px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .load_video {
+            color: black;
+            font-size: 12px;
+            font-weight: bolder;
+            margin-top: -18px;
+        }
+
+        .out_process {
+            padding-top: 40px;
+            padding-left: 20px;
+            background-color: #d93b5b;
+        }
+
+        .out_process_head {
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        .process {
+            width: 100%;
+            color: #dc4b69;
+            font-weight: bolder;
+            font-size: 100px;
+            text-shadow: 0px 2px 0 rgb(146, 54, 74);
+            display: flex;
+            justify-content: end;
+            padding-right: 150px;
+        }
+
+        .process_blogs {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .process_blogs .blogs {
+            padding: 20px;
+            width: 250px;
+        }
+
+        .process_blogs .blogs_header {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .process_blogs .blogs_summary {
+            font-size: 11px;
+            margin-top: 10px;
+        }
+
+        .display_column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display_row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .horizontal_image {
+            width: 100%;
+            margin-top: 19px;
+        }
+
+        .vertical_image {
+            height: 150px;
+            margin-top: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home" class="aboutus-container">
+        <div class="menu-container">
+            <div class="logo"><img src="img/patco.png" alt="logo"></div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#home">About Us</a>
+                <a href="#our_work">Our Work</a>
+                <a>Services</a>
+                <a>Contact Us</a>
+            </div>
+
+        </div>
+        <div>
+            <div class="patco_productions">
+                PATCO PRODUCTIONS
+                <div class="load_video">(loading video)</div>
+            </div>
+
+            <div class="aboutus-intro">
+                <div class="intro intro1">
+                    <div class="intro-head">
+                        ABOUT US
+                    </div>
+                    <div style="margin-right: 30px;">
+                        <div class="line-with-circle red">
+                            <div class="line"></div>
+                            <div class="circle red circle-end"></div>
+                        </div>
+                        <div class="yellow-text">
+                            “Delivering Stunning <br />
+                            Visual Narratives"
+                        </div>
+                        <div style="margin-top:15px ; font-size:11px;">
+                            From concept to final edit, we tailor our production process to
+                            suit your unique needs, ensuring the highest quality results.
+                        </div>
+                    </div>
+                </div>
+                <div class="intro intro2">
+                    <div style="font-size:11px;">
+                        <span class="yellow-text">PATCO PRODUCTIONS </span>has earned its reputation in the market
+                        for its services. We aim to grow as the most prominent firm for
+                        our Customers, Business Associates & Stakeholders and we
+                        take pride that the intense vision of our experienced personnel
+                        encourages us to create a niche in the industry by serving
+                        clients across the globe
+                    </div>
+                    <div style="margin-top: 15px;">
+                        OUR STORY
+                    </div>
+                    <div class="line-with-circle red" style="margin-top: 8px;margin-left: 5px;">
+                        <div class="line"></div>
+                        <div class="circle red circle-start"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            about
+        </div>
+    </div>
+    <div id="our_work" class=" out_process">
+        <div class="out_process_head">
+            <div>
+                Our creative video production process
+            </div>
+
+            <div class="line-with-circle yellow" style="margin-top: 8px;margin-left: 100px; width: 650px;">
+                <div class="line"></div>
+                <div class="circle yellow circle-start"></div>
+            </div>
+        </div>
+
+        <div class="process_blogs">
+            <div class="blogs">
+                <div class="blogs_header">
+                    Scripting and
+                    Story boarding:
+                </div>
+                <div class="blogs_summary">
+                    Crafting compelling scripts and detailed
+                    storyboards that breathe life into your
+                    vision. With our Transforming ideas into
+                    captivating stories through expert
+                    scripting and meticulous storyboarding.
+                    Every word and frame is carefully
+                    crafted to captivate and engage your
+                    audience. Trust us to bring your vision to
+                    life with precision and creativity. Elevate
+                    your project with our comprehensive
+                    scripting and storyboarding services.
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blogs_header">
+                    Pre-production
+                    and Shoot:
+                </div>
+                <div class="blogs_summary">
+                    We focus on key elements to ensure a
+                    seamless shoot or video production. Our
+                    experienced team conducts thorough
+                    location scouting to find captivating
+                    settings that align with your creative
+                    vision. With a team of skilled
+                    professionals and state of the art
+                    equipment, we ensure a seamless and
+                    high-quality production experience.
+                    During production, we meticulously
+                    execute the plans and creative concepts
+                    developed during pre production.
+                </div>
+            </div>
+            <div class="blogs">
+                <div class="blogs_header">
+                    Post production
+                </div>
+                <div class="blogs_summary">
+                    In the post production phase, we bring
+                    together all the elements to polish and
+                    enhance your video, ensuring a
+                    seamless and captivating final product.
+                    Our skilled team utilises advanced
+                    editing, color grading, animation, and
+                    sound integration techniques to elevate
+                    your footage. We strive for excellence,
+                    continuously refining and polishing your
+                    video until it reaches its full potential. Let
+                    us transform your raw footage into a
+                    polished masterpiece.
+                </div>
+            </div>
+        </div>
+        <div class="process">
+            process
+        </div>
+        <div class="our_work_container">
+            <div style="font-size: 25px;">
+                OUR WORK
+            </div>
+            <div class="line-with-circle yellow" style="width:165px;margin-left: -20px;">
+                <div class="line"></div>
+                <div class="circle yellow circle-end"></div>
+            </div>
+            <div class="display_column">
+                <div class="display_row">
+                    <div class="vertical_image">
+                        <img src="img/img1.png" alt="image">
+                    </div>
+                    <div class="display_column">
+                        <div class="horizontal_image">
+                            <img src="img/img2.png" alt="image">
+                        </div>
+                        <div class="horizontal_image">
+                            <img src="img/img3.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="vertical_image">
+                        <img src="img/img4.png" alt="image">
+                    </div>
+                    <div class="vertical_image">
+                        <img src="img/img5.png" alt="image">
+                    </div>
+                </div>
+                <div class="display_row">
+                    <div class="horizontal_image">
+                        <img src="img/img6.png" alt="image">
+                    </div>
+                    <div class="horizontal_image">
+                        <img src="img/img7.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
